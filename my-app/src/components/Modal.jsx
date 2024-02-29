@@ -18,7 +18,7 @@ function Modal({isOpen, onClose, children}) {
                 justifyContent: "center",
             }}
         >
-            <div
+            <div onClick={e => e.stopPropagation()}
                 style={{
                     background: "white",
                     height: 150,
